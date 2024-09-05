@@ -2,6 +2,7 @@ import streamlit as st
 from joblib import load
 import requests
 import pandas as pd
+import time
 
 loaded_model = load('Random_Forest.joblib')
 
@@ -70,7 +71,23 @@ def main():
         else:
             data = [float(feature1), float(feature2),
                     float(feature3), float(feature4)]
-            result = predict(data)
+            
+            # Bắt đầu đo thời gian
+            start_time = time.time()
+            # Hiển thị thanh tiến trình
+            progress_bar = st.progress(0)
+            # Sử dụng st.spinner để hiển thị thông báo đang chạy
+            with st.spinner('The model is predicting...'):
+                time.sleep(0.3)
+
+                result = predict(data)
+
+                progress_bar.progress(30)
+                time.sleep(0.2)
+
+                progress_bar.progress(100)
+                time.sleep(0.1)
+                st.success('Prediction completed! ✔️')
 
             table = {
                 "Loài": Classes,

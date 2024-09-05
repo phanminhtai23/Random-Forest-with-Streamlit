@@ -1,4 +1,4 @@
-#!/home/phan-minh-tai/Iris-with-RandomForest-on-Streamlit/myenv/bin/python3
+#!/home/phan-minh-tai/Random-Forest-with-Streamlit/myenv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

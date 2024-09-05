@@ -15,4 +15,4 @@ env/
 .idea/
 
 # Bỏ qua các tệp hệ điều hành
-.DS_Store
+.DS_Store~
