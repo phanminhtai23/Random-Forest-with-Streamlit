@@ -1,0 +1,18 @@
+# Bỏ qua các tệp biên dịch Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Bỏ qua môi trường ảo
+venv/
+env/
+
+# Bỏ qua các tệp log
+*.log
+
+# Bỏ qua các tệp cấu hình IDE
+.vscode/
+.idea/
+
+# Bỏ qua các tệp hệ điều hành
+.DS_Store
